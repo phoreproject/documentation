@@ -10,4 +10,4 @@ Staking Guide ([KR](https://github.com/phoreproject/documentation/blob/master/Ph
 
 ## Papers
 
-Phore Whitepaper ([EN](https://github.com/phoreproject/documentation/blob/master/Phore_White_Paper_EN.pdf), [FR](https://github.com/phoreproject/documentation/blob/master/Phore_White_Paper_FR.pdf), [KR](https://github.com/phoreproject/documentation/blob/master/Phore_White_Paper_KR.pdf))
+Phore Whitepaper ([EN](https://github.com/phoreproject/documentation/blob/master/Phore_White_Paper_EN.pdf), [FR](https://github.com/phoreproject/documentation/blob/master/Phore_White_Paper_FR.pdf), [KR](https://github.com/phoreproject/documentation/blob/master/Phore_White_Paper_KR.pdf), [IND](https://github.com/phoreproject/documentation/blob/master/Phore_White_Paper_IND.pdf))
