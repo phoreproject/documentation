@@ -4,7 +4,7 @@ This repository will keep track of any official documentation for the Phore cryp
 
 ## Guides
 
-Staking Guide ([KR](https://github.com/phoreproject/documentation/blob/master/Phore_Staking_Guide_KR.pdf))
+Staking Guide ([EN](https://github.com/phoreproject/documentation/blob/master/Phore_Staking_Guide_EN.pdf)), ([KR](https://github.com/phoreproject/documentation/blob/master/Phore_Staking_Guide_KR.pdf))
 
 ## Tutorials
 
