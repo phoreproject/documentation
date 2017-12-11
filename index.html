@@ -1,0 +1,687 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Documentation</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#what-is-phore" class="toc-h2 toc-link" data-title="What is Phore?">What is Phore?</a>
+                  </li>
+                  <li>
+                    <a href="#coin-information" class="toc-h2 toc-link" data-title="Coin Information">Coin Information</a>
+                  </li>
+                  <li>
+                    <a href="#history" class="toc-h2 toc-link" data-title="History">History</a>
+                  </li>
+                  <li>
+                    <a href="#team" class="toc-h2 toc-link" data-title="Team">Team</a>
+                  </li>
+                  <li>
+                    <a href="#roadmap" class="toc-h2 toc-link" data-title="Roadmap">Roadmap</a>
+                  </li>
+                  <li>
+                    <a href="#short-term-q3-q4-2017" class="toc-h2 toc-link" data-title="Short Term (Q3 - Q4, 2017)">Short Term (Q3 - Q4, 2017)</a>
+                  </li>
+                  <li>
+                    <a href="#medium-term-q1-2018" class="toc-h2 toc-link" data-title="Medium Term (Q1, 2018)">Medium Term (Q1, 2018)</a>
+                  </li>
+                  <li>
+                    <a href="#medium-to-long-term-q2-q4-2018" class="toc-h2 toc-link" data-title="Medium to Long Term (Q2-Q4, 2018)">Medium to Long Term (Q2-Q4, 2018)</a>
+                  </li>
+                  <li>
+                    <a href="#long-term-q4-2018-and-beyond" class="toc-h2 toc-link" data-title="Long Term (Q4, 2018 and beyond)">Long Term (Q4, 2018 and beyond)</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#masternodes" class="toc-h1 toc-link" data-title="Masternodes">Masternodes</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#vultr-vps-server-guide" class="toc-h2 toc-link" data-title="Vultr VPS Server Guide">Vultr VPS Server Guide</a>
+                  </li>
+                  <li>
+                    <a href="#raspberry-pi-guide" class="toc-h2 toc-link" data-title="Raspberry Pi Guide">Raspberry Pi Guide</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#error" class="toc-h1 toc-link" data-title="Error">Error</a>
+          </li>
+      </div>
+        <ul class="toc-footer">
+            <li><a href='https://phore.io/'>Phore.io</a></li>
+            <li><a href='https://discordapp.com/invite/Aucncz5'>Join Discord</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1><h2 id='what-is-phore'>What is Phore?</h2>
+<p>Phore is a digital privacy cryptocurrency with a focus on sustainable development and growth. Phore uses Proof of Stake and Masternodes to secure the network and provide for a deep level of privacy and security. Phore has relatively fast block times compared with Bitcoin and low transaction fees. </p>
+<h2 id='coin-information'>Coin Information</h2>
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Block Target</td>
+<td>60 seconds</td>
+</tr>
+<tr>
+<td>Transaction Fee</td>
+<td>0.0001 PHR per kB</td>
+</tr>
+<tr>
+<td>Block Maturity</td>
+<td>50</td>
+</tr>
+<tr>
+<td>PoS Reward</td>
+<td>2.8 PHR</td>
+</tr>
+<tr>
+<td>Masternode Reward</td>
+<td>4.2 PHR</td>
+</tr>
+<tr>
+<td>Masternode Collateral</td>
+<td>10,000 PHR</td>
+</tr>
+</tbody></table>
+<h2 id='history'>History</h2>
+<p>Phore is a digital privacy cryptocurrency, an update and rebrand of KryptKoin (KTK) which was
+pre-announced in May 2014, and whose distribution started on the 21st May 2014.
+Kryptkoin was a non-premined coin, distributed equally to people who qualified for a stake. In
+total, 500 stakes were distributed in 2 stages. Bonus KTK was given to those who held for 30
+days. There was no ICO, and no dev premine. The developer received 1 stake, the same as
+every other stakeholder received. Following launch, Kryptkoin quickly developed a large
+following and introduced an online marketplace in 2015, which included Paypal integration
+where digital items such as Wordpress themes and physical items such as clothes were both
+listed and bought.
+To facilitate new features, the existing code needed to be rewritten from scratch. This required
+a swap from Kryptkoin to the new Phore.
+A two-month window was given to existing KTK holders to swap their coins for new Phore on a
+1:1 basis.</p>
+<h2 id='team'>Team</h2>
+<p>The coin has a strong and committed team:</p>
+
+<ul>
+<li>Phroshi - Lead Developer</li>
+<li>Julian - Core Developer</li>
+<li>Fish313 - Technical Support &amp; Social Media Manager</li>
+<li>Toby - Customer Relations &amp; Social Media Manager</li>
+<li>Shanto - Community Manager &amp; Customer Relations</li>
+<li>Liray - Technical Support &amp; Japanese Community Manager</li>
+<li>Ubermaster - Planning and Partnerships</li>
+</ul>
+
+<p>We will hire more staff and developers to strengthen our team as the Phore expands and
+evolves.</p>
+<h2 id='roadmap'>Roadmap</h2>
+<p>Phore is a restless currency. The key challenge going forward is to introduce real-world use which attract everyday people. In order to achieve this, Phore will implement advanced features to clearly differentiate Phore from other privacy based digital currencies.
+A number of these will add to the functionality and strategic integration of the online marketplace, which will be built on the current foundations of Phore. Governance will determine many of the goals going forward to keep the currency decentralized, but a decrease in Master node rewards per block is expected to decrease inflation.</p>
+<h2 id='short-term-q3-q4-2017'>Short Term (Q3 - Q4, 2017)</h2>
+<ul>
+<li><strong>Zerocoin Protocol</strong> - Fixes a major weakness within most digital currencies. With
+Zerocoin Protocol implemented within Phore, your purchases and transactions are
+secure and no one is privy to your financial activity.</li>
+<li><strong>Masternode Governance</strong> - Those with Masternodes would be given ‘yes’ or ‘no’ votes
+using commands built into Phore wallets. Decentralized governance will allow a cryptocurrency
+network to grow, and incorporate democratic procedures that will ensure the
+longevity of the project, leading to a truly decentralized management system.</li>
+<li><strong>Online Marketplace</strong> - UI compatibility for all devices. </li>
+</ul>
+<h2 id='medium-term-q1-2018'>Medium Term (Q1, 2018)</h2>
+<ul>
+<li><strong>Segregated Witness</strong> - Allows the number of transactions per block on the Phore
+blockchain to be increased. All signature data will be removed so that more transaction
+data can be packed in.</li>
+<li><strong>Decentralized Micro Crowdfunding</strong> - Part of the Online Marketplace. A decentralized
+Kickstarter or Indiegogo platform, targeted at the &#39;side-hustle’ and micro-business
+generation. This means that the individual, partnership, or small startup with a brilliant
+invention or service can easily use the Phore platform to raise money, with much lower
+fees than other traditional platforms. We will also act as escrow until the product is
+received by the buyer.</li>
+<li><strong>Creation of the Phore Foundation</strong> - Develop long-term e-commerce solutions,
+investments, partnerships, and to promote the sustainability and longevity of Phore.</li>
+</ul>
+<h2 id='medium-to-long-term-q2-q4-2018'>Medium to Long Term (Q2-Q4, 2018)</h2>
+<ul>
+<li><strong>Smart Contracts</strong> - This will allow decentralized apps (dApps) to run on the Phore 
+Page 5 of 6
+blockchain. Payment channels, trustless prediction markets, and decentralized
+exchanges are all things we expect to see.</li>
+<li><strong>iOS and Android apps</strong> - Integrated wallets and online marketplace access. This will
+unshackle Phore from use on laptops and desktops to make it a true mobile-friendly
+platform.</li>
+<li><strong>Ledger and Trezor Support</strong> - For long-term cold storage.</li>
+<li><strong>Phore Labs</strong> - Incubator for Phore related projects to encourage development and
+growth through the Phore blockchain</li>
+</ul>
+
+<p>The Phore Foundation will invest in projects to help them reach market and then reinvest
+profits in further projects. It is envisioned that ultimately 5-10% of the projects on the
+marketplace will be taken up by Phore Lab projects.
+The Phore Foundation will actively seek out projects to support. These will be sourced from
+individuals, universities, start-ups, and cooperatives around the world who have the capacity
+improve the lives of others. Investments will be made in the form of Phore currency, and
+participants will sell exclusively through the Phore marketplace online for a fixed minimum
+period before being allowed to sell their product locally offline.</p>
+<h2 id='long-term-q4-2018-and-beyond'>Long Term (Q4, 2018 and beyond)</h2>
+<ul>
+<li>A.I. Bot creation - For trading support of Phore on exchanges.</li>
+<li>Phore Foundation Scholarships - Talented Coders will receive paid internships on
+placements at Phore.</li>
+<li>Phore Foundation Charitable Donations - Phore will be donated to charitable causes as
+voted by the Masternode Governance system.</li>
+<li>Further Partnerships - With industry-leading companies.</li>
+<li>Event Sponsorship - Sponsor Phore related events to promote Phore as a platform</li>
+</ul>
+<h1 id='masternodes'>Masternodes</h1>
+<p>Masternode definition.</p>
+<h2 id='vultr-vps-server-guide'>Vultr VPS Server Guide</h2>
+<p>What you will need:</p>
+
+<ul>
+<li>Local computer windows 7-10</li>
+<li>Remote server – VPS <a href="https://www.vultr.com/?ref=7216049">www.vultr.com/</a></li>
+<li>PuTTY to configure and setup VPS</li>
+<li>10,000 PHR</li>
+</ul>
+
+<p>Register an account with Vultr. Once you’ve done that, can create your first server
+<br><br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_add_instance.png?raw=true" align="center" height="107" width="650" ></a>
+</p></p>
+
+<p><br><br>
+Select server location, have multiple options to choose from. All are perfectly ok.</p>
+
+<p><br><br></p>
+
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_select_location.png?raw=true" align="center" height="356" width="650" ></a>
+</p>
+
+<p><br><br></p>
+
+<p>Next server type: Select Ubuntu 16.4 x64</p>
+
+<p><br><br></p>
+
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_select_os.png?raw=true" align="center" height="235" width="650" ></a>
+</p>
+
+<p><br><br></p>
+
+<p>Server size, select the $5/mo option</p>
+
+<p><br><br></p>
+
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_select_server_size.png?raw=true" align="center" height="284" width="650" ></a>
+</p>
+
+<p><br><br></p>
+
+<p>You can setup a SSH key so you don’t need to use the password every time to login to the server. But
+to keep things simple for the moment we are just going to use the standard password given after the
+server is ready.
+<br><br>
+Last thing server hostname &amp; label</p>
+
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_server_label.png?raw=true" align="center" height="128" width="650" ></a>
+</p>
+
+<p><br><br></p>
+
+<p>Next we’re going to install PuTTY while the server is being setup.
+Download from here: <a href="http://putty.org">http://putty.org</a>
+<br><br>
+Once you install that, back to our Vultr account to grab the login details.
+Now open PuTTY to add the server</p>
+
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_putty_configuration.png?raw=true" align="center" height="416" width="650" ></a>
+</p>
+
+<p><br><br></p>
+
+<p>Enter the IP address in the Host Name, and enter the server name to Saved Sessions. Click save.
+<br><br>
+Click the open button. Now the console has opened, click yes.
+<br><br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_putty_security_alert.png?raw=true" align="center" height="410" width="650" ></a>
+</p></p>
+
+<p><br><br></p>
+
+<p>Then enter your server login details provided in your Vultr account.
+<br><br>
+Now you cannot ctrl+V to paste in the console. Either right click on mouse or shift+insert (sometimes
+on keyboard it will just be INS key)
+<br><br>
+User: <code>root</code>
+<br><br>
+Password: when you paste it will <strong>not</strong> display. So don’t try and paste again. Just paste once and click
+keyboard enter.
+<br><br>
+Now the first thing we are going to do are a few updates to the server and install the required
+dependencies for the wallet to run…
+<br><br>
+Run these commands in order, one at a time:
+<br><br>
+<code>sudo apt-get update</code>
+<br><br>
+<code>sudo apt-get upgrade</code>
+<br><br>
+<code>sudo apt-get dist-upgrade</code>
+<br><br>
+<code>sudo apt-get install nano htop git</code>
+<br><br>
+<code>sudo apt-get install software-properties-common</code>
+<br><br>
+<code>sudo apt-get install build-essential libtool autotools-dev pkg-config libssl-dev</code>
+<br><br>
+<code>sudo apt-get install libboost-all-dev</code>
+<br><br>
+<code>sudo apt-get install libminiupnpc-dev</code>
+<br><br>
+<code>sudo apt-get install autoconf</code>
+<br><br>
+<code>sudo apt-get install automake</code>
+<br><br>
+<code>sudo add-apt-repository ppa:bitcoin/bitcoin</code>
+<br><br>
+<code>sudo apt-get update</code>
+<br><br>
+<code>sudo apt-get install libdb4.8-dev libdb4.8++-dev</code>
+<br><br>
+Now we have server updated and all the dependencies installed we can move on to the next part
+and that’s installing a firewall…
+<br><br>
+<code>apt-get install ufw</code>
+<br><br>
+<code>ufw allow ssh/tcp</code>
+<br><br>
+<code>ufw limit ssh/tcp</code>
+<br><br>
+<code>ufw allow 11771/tcp</code>
+<br><br>
+<code>ufw logging on</code>
+<br><br>
+<code>ufw enable</code>
+<br><br>
+Check your firewall status using the following command:
+<br><br>
+<code>ufw status</code>
+<br><br>
+Onto the next step, setting up a swap file… Again just follow each one in order:
+<br><br>
+<code>cd /var</code>
+<br><br>
+<code>sudo touch swap.img</code>
+<br><br>
+<code>sudo chmod 600 swap.img</code>
+<br><br>
+<code>sudo dd if=/dev/zero of=/var/swap.img bs=1024k count=2000</code>
+<br><br>
+<code>mkswap /var/swap.img</code>
+<br><br>
+<code>sudo swapon /var/swap.img</code>
+<br><br>
+<code>sudo free</code>
+<br><br>
+<code>sudo echo &quot;/var/swap.img none swap sw 0 0&quot; &gt;&gt; /etc/fstab</code>
+<br><br>
+<code>cd</code>
+<br><br>
+<code>reboot</code>
+<br><br></p>
+
+<p>After the reboot you will need to log back into the server. Once you login again, let’s install and
+compile the Phore wallet…
+<br><br>
+<code>sudo git clone https://github.com/phoreproject/Phore.git</code>
+<br><br>
+<code>chmod +x Phore/autogen.sh</code>
+<br><br>
+<code>chmod +x Phore/share/genbuild.sh</code>
+<br><br>
+<code>chmod +x Phore/src/leveldb/build_detect_platform</code>
+<br><br>
+<code>cd Phore</code>
+<br><br>
+<code>sudo ./autogen.sh</code>
+<br><br>
+<code>sudo ./configure</code>
+<br><br>
+<code>sudo make</code>
+<br><br>
+<code>sudo make install</code>
+<br><br>
+<code>cd src</code>
+<br><br>
+<code>mv phored phore-cli phore-tx ~/</code>
+<br><br>
+<code>cd</code>
+<br><br>
+Now if you plan to setup multiple masternodes, we can go back to our Vultr account and create a
+snapshot of the server we just setup. It will save us time, no requirement to compile again. Unless
+we have a wallet update, then need to start from scratch again for any new MN’s and update the
+ones already running.
+<br><br>
+If you only intend to run one MN, run this command to remove the Phore source files, as they are no
+longer required.
+<br><br>
+<code>rm -rf Phore</code>
+<br><br>
+Let’s fire up the daemon on the server, it will give us an error about missing rpc password. We will
+come back to this later.
+<br><br>
+<code>phored -daemon</code>
+<br><br>
+Next if you intend to run multiple masternodes we can create the snapshot. Skip this if only intend
+to run one mastermode.
+<br><br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_add_snapshot.png?raw=true" align="center" height="488" width="650" ></a>
+</p></p>
+
+<p><br><br>
+Click add snapshot and select the server from the dropdown and add a label. Click take snapshot
+<br><br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_take_snapshot.png?raw=true" align="center" height="235" width="650" ></a>
+</p></p>
+
+<p><br><br>
+This will take a while, grab a cup of tea! :)
+<br><br>
+Once it’s finished we can continue…
+<br><br>
+<h3>Step 1</h3></p>
+
+<p>We can fire up the qt wallet on your local computer. Generate a new address
+<br><br>
+Enter a label and click Request payment button.
+<br><br>
+Copy the address
+<br><br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_create_mn_address.png?raw=true" align="center" height="458" width="650" ></a>
+</p></p>
+
+<p><br><br>
+And now go to the send tab
+<br><br>
+Enter the copied address and send <strong>exactly</strong> 10,000 PHR. No more, no less in a single transaction. Wait
+for it to confirm on the blockchain.
+<br><br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_send_to_mn.png?raw=true" align="center" height="479" width="650" ></a>
+</p></p>
+
+<p><br><br>
+Now create a new .txt file on your computer, to store the date used for the masternode
+<br><br>
+Can use this format:
+<br><br>
+MN Label:
+<br>
+Collateral address:
+<br>
+Masternode Key:
+<br>
+Public IP:
+<br>
+MN conf line:
+<br><br>
+Go to the [<strong>Tools</strong> &gt; <strong>Debug Console</strong>] and enter these commands below:
+<br><br>
+<h3>Step 2</h3></p>
+
+<p><code>masternode genkey</code>
+<br><br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_generate_masternode_output.png?raw=true" align="center" height="215" width="650" ></a>
+</p></p>
+
+<p><br><br>
+Copy that into into the .txt file. <em>Masternode Key</em>
+<br><br></p>
+
+<h3>Step 3</h3>
+
+<p><code>masternode outputs</code></p>
+<h2 id='raspberry-pi-guide'>Raspberry Pi Guide</h2>
+<p>test</p>
+<h1 id='error'>Error</h1>
+<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files...just save them to the `includes` folder and add them to the top of your `index.md`'s frontmatter. Files are included in the order listed.</aside>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>
