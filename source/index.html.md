@@ -1,12 +1,10 @@
 ---
-title: Documentation
+title: Phore Documentation
 
 toc_footers:
   - <a href='https://phore.io/'>Phore.io</a>
   - <a href='https://discordapp.com/invite/Aucncz5'>Join Discord</a>
 
-includes:
-  - errors
 
 search: true
 
@@ -124,7 +122,9 @@ voted by the Masternode Governance system.
 
 # Masternodes
 
-Masternode definition.
+Masternodes play a pivotal role on the Phore blockchain, by providing various decentralized services; Instant transactions and Governance.
+<br><br>
+Anyone can run a masternode simply by holding 10,000 Phore as collateral in their wallet. And by doing so, you will receive block rewards for helping provide services to the network. The operators of masternodes can also vote on various budget and development proposals.
 
 ## Vultr VPS Server Guide
 
@@ -191,7 +191,7 @@ Once you install that, back to our Vultr account to grab the login details.
 Now open PuTTY to add the server
 
 <p align="center">
-<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_putty_configuration.png?raw=true" align="center" height="416" width="650" ></a>
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_putty_configuration.png?raw=true" align="center" height="352" width="550" ></a>
 </p>
 
 <br><br>
@@ -201,7 +201,7 @@ Enter the IP address in the Host Name, and enter the server name to Saved Sessio
 Click the open button. Now the console has opened, click yes.
 <br><br>
 <p align="center">
-<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_putty_security_alert.png?raw=true" align="center" height="410" width="650" ></a>
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_putty_security_alert.png?raw=true" align="center" height="347" width="550" ></a>
 </p>
 
 <br><br>
@@ -335,14 +335,14 @@ Next if you intend to run multiple masternodes we can create the snapshot. Skip 
 to run one mastermode.
 <br><br>
 <p align="center">
-<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_add_snapshot.png?raw=true" align="center" height="488" width="650" ></a>
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_add_snapshot.png?raw=true" align="center" height="338" width="450" ></a>
 </p>
 
 <br><br>
 Click add snapshot and select the server from the dropdown and add a label. Click take snapshot
 <br><br>
 <p align="center">
-<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_take_snapshot.png?raw=true" align="center" height="235" width="650" ></a>
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_take_snapshot.png?raw=true" align="center" height="144" width="400" ></a>
 </p>
 
 <br><br>
@@ -359,7 +359,7 @@ Enter a label and click Request payment button.
 Copy the address
 <br><br>
 <p align="center">
-<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_create_mn_address.png?raw=true" align="center" height="458" width="650" ></a>
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_create_mn_address.png?raw=true" align="center" height="282" width="400" ></a>
 </p>
 
 <br><br>
@@ -369,7 +369,7 @@ Enter the copied address and send **exactly** 10,000 PHR. No more, no less in a 
 for it to confirm on the blockchain.
 <br><br>
 <p align="center">
-<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_send_to_mn.png?raw=true" align="center" height="479" width="650" ></a>
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_send_to_mn.png?raw=true" align="center" height="295" width="400" ></a>
 </p>
 
 <br><br>
@@ -404,11 +404,250 @@ Copy that into into the .txt file. *Masternode Key*
 <h3>Step 3</h3>
 
 `masternode outputs`
-## Raspberry Pi Guide
 
-test
+<p align="center">
+<a href="url"><img src="https://github.com/forming/slate/blob/master/source/images/vps_create_generate_masternode_output.png?raw=true" align="center" height="215" width="650" ></a>
+</p>
+
+<br><br>
 
 
+Now we need to format the masternode config line:
+<br><br>
+`<Name of Masternode>` `<VPS IP address>:11771` `<Result of Step 2>` `<Result of Step 3>` `<The number after the long string in Step 3>`
+<br><br>
+Example how final line should look:
+<br><br>
+`phore-mn01 107.131.25.434:11771 88xrxxxxxxxxxxxxxxxxxxxxxxx7K 6b4c9xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx7ee23 0`
+<br><br>
+
+Can add this to the .txt file. *MN conf line*
+
+<br><br>
+
+Edit the local wallet masternode.conf file. **Tools** > **Open Masternode Configuration File**
+<br><br>
+Add the *MN conf line*, like the example below to the masternode.conf file. Save it, and close the file.
+<br><br>
+`phore-mn01 107.191.55.244:11771 88xrxxxxxxxxxxxxxxxxxxxxxxx7K 6b4c9xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx7ee23 0`
+<br><br>
+
+Now we need to edit the **phore.conf** file in the local wallet. [**Tools** > **Open Wallet Configuration File**]
+<br><br>
+
+rpcuser=`<long random username>`
+<br>
+rpcpassword=`<longer random password>`
+<br>
+rpcallowip=127.0.0.1
+<br>
+listen=0
+<br>
+server=1
+<br>
+daemon=1
+<br>
+logtimestamps=1
+<br>
+maxconnections=256
+<br><br>
+
+Save it, close the file and **restart** the wallet.
+<br><br>
+
+Now back to PuTTY and we need to edit the phore.conf on the VPS server.
+<br><br>
+`cd`
+<br><br>
+`nano .phore/phore.conf`
+<br><br>
+Enter the following:
+
+rpcuser=`<long random username>`
+<br>
+rpcpassword=`<longer random password>`
+<br>
+rpcallowip=127.0.0.1
+<br>
+listen=1
+<br>
+server=1
+<br>
+daemon=1
+<br>
+logtimestamps=1
+<br>
+maxconnections=256
+<br>
+masternode=1
+<br>
+externalip=`<VPS IP address>`
+<br>
+bind=`<VPS IP address>`
+<br>
+masternodeaddr=`<VPS IP address>`:11771
+<br>
+masternodeprivkey=`Result of Step 1`
+
+<br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/documentation/blob/master/source/images/vps_create_add_phore_conf.png?raw=true" align="center" height="324" width="450" ></a>
+</p>
+
+<br><br>
+
+Press **ctrl+X**
+<br>
+Then **Y** to save, press enter to exit
+<br><br>
+Let’s fire up the daemon on the server:
+
+`phored -daemon`
+
+<br><br>
+
+We need to let it fully sync, give it a couple of minutes and enter:
+<br><br>
+`phore-cli getinfo`
+
+<br>
+
+{
+<br>
+"version" : 1000000,
+<br>
+"protocolversion" : 70001,
+<br>
+"walletversion" : 61000,
+<br>
+"balance" : 0.00000000,
+<br>
+"obfuscation_balance" : 0.00000000,
+<br>
+*"blocks" : 9656*,
+<br>
+...
+<br>
+
+We’re looking at the **blocks**. You can check your local wallet to see the current block height. By
+hovering over the tick.
+
+<br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/documentation/blob/master/source/images/vps_create_current_block_check.png?raw=true" align="center" height="93" width="185" ></a>
+</p>
+
+<br><br>
+
+Once your server has synced up, back to the local wallet and click the **Masternode** tab. You should
+see your MN listed.
+Click the masternode to highlight then
+Click **Start alias** or **Start MISSING**. Then click yes in the popup.
+
+<br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/documentation/blob/master/source/images/vps_create_masternodes_tab_actions.png?raw=true" align="center" height="68" width="500" ></a>
+</p>
+
+<br><br>
+
+<br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/documentation/blob/master/source/images/vps_create_masternode_start_prompt.png?raw=true" align="center" height="255" width="500" ></a>
+</p>
+
+<br><br>
 
 
+If you receive an error message, go to the debug console and enter:
+<br><br>
+`startmasternode alias false <mn-alias>`
+<br><br>
+`<mn-alias>` being what you setup previously in the masternode.conf. And is listed on the
+Masternode tab.
+<br><br>
 
+<aside class="notice">
+You may need to unlock the wallet
+</aside>
+
+<br><br>
+
+If everything was setup correctly, after entering the command you will see something like this:
+<br><br>
+
+
+    {
+    <br>
+        "overall" : "Successfully started 1 masternodes, failed to start 0, total 1",
+        <br>
+        "detail" : {
+        <br>
+            "status" : {
+            <br>
+                "alias" : "phore-mn01",
+                <br>
+                "result" : "successful"
+                <br>
+            ...
+
+
+You can now close the debug, and return the masternode tab and check the status:
+<br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/documentation/blob/master/source/images/vps_create_enabled_mn_row.png?raw=true" align="center" height="182" width="500" ></a>
+</p>
+
+<br><br>
+
+Check your Collateral is locked. First let’s enable coin control: [**Settings** > **Options** > **Wallet**]
+
+<br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/documentation/blob/master/source/images/vsp_create_wallet_configuration.png?raw=true" align="center" height="230" width="350" ></a>
+</p>
+
+<br><br>
+
+Then go back to the Send tab. And you have a new Inputs option:
+
+<br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/documentation/blob/master/source/images/vps_create_send_inputs.png?raw=true" align="center" height="207" width="350" ></a>
+</p>
+
+<br><br>
+
+If it’s not locked, right click and select **Lock Unspent**
+
+<br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/documentation/blob/master/source/images/vps_create_locked_10000_phr.png?raw=true" align="center" height="34" width="300" ></a>
+</p>
+
+<br><br>
+
+You now have Phore masternode setup!
+<br>
+Repeat for multiple masternodes, using a Vultr snapshot can save a lot of the setup time. Remember
+each one requires a unique IP address.
+<br><br>
+And watch the rewards come in…
+
+<br>
+<p align="center">
+<a href="url"><img src="https://github.com/forming/documentation/blob/master/source/images/vps_create_masternode_reward.png?raw=true" align="center" height="89" width="350" ></a>
+</p>
+
+<br><br>
+
+**Have queries?**
+<br><br>
+Visit our [Discord](https://discordapp.com/invite/Aucncz5).
+
+
+<aside class="notice">
+For better security the .txt we created to make a note of our MN details. Should now be deleted or
+stored in a safe place, password protected, encrypted, whatever so it’s not a plain txt that can be
+easily accessed!
+</aside>

@@ -39,27 +39,27 @@ body {
 .content {
   font-size: 12px;
 
-  pre, code {
-    @extend %code-font;
-    @extend %break-words;
-    border: 1px solid $print-color;
-    border-radius: 5px;
-    font-size: 0.8em;
-  }
+//  pre, code {
+//    @extend %code-font;
+//    @extend %break-words;
+//    border: 1px solid $print-color;
+//    border-radius: 5px;
+//    font-size: 0.8em;
+//  }
 
-  pre {
-    code {
-      border: 0;
-    }
-  }
-
-  pre {
-    padding: 1.3em;
-  }
-
-  code {
-    padding: 0.2em;
-  }
+//  pre {
+//    code {
+//      border: 0;
+//    }
+//  }
+//
+//  pre {
+//    padding: 1.3em;
+//  }
+//
+//  code {
+//    padding: 0.2em;
+//  }
 
   table {
     border: 1px solid $print-color;

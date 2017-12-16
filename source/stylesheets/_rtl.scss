@@ -33,21 +33,7 @@ $default: auto;
 ////////////////////////////////////////////////////////////////////////////////
 // PAGE LAYOUT AND CODE SAMPLE BACKGROUND
 ////////////////////////////////////////////////////////////////////////////////
-.page-wrapper {
-    margin-#{left}: $default !important;
-    margin-#{right}: $nav-width;
-    .dark-box {
-        #{right}: $default;
-        #{left}: 0;
-    }
-}
 
-.lang-selector {
-    width: $default !important;
-    a {
-        float: right;
-    }
-}
 
 ////////////////////////////////////////////////////////////////////////////////
 // CODE SAMPLE STYLES
@@ -89,11 +75,11 @@ $default: auto;
             background: linear-gradient(to top right, #F7E633 0%, #F1D32F 100%);
         }
     }
-    pre,
-    blockquote {
-        float: left !important;
-        clear: left !important;
-    }
+//    pre,
+//    blockquote {
+//        float: left !important;
+//        clear: left !important;
+//    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
