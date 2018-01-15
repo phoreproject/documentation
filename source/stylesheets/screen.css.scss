@@ -74,9 +74,14 @@ html, body {
   // This is the logo at the top of the ToC
   &>img {
     display: block;
+    margin: auto;
     max-width: 100%;
   }
 
+  .img_text {
+    text-align: center;
+}  
+    
   &>.search {
     position: relative;
 
@@ -512,46 +517,6 @@ html, body {
 // CODE SAMPLE STYLES
 ////////////////////////////////////////////////////////////////////////////////
 // This is all the stuff that appears in the right half of the page
-
-.content {
-  pre, blockquote {
-    background-color: $code-bg;
-    color: #fff;
-
-    margin: 0;
-    width: $examples-width;
-
-    float:right;
-    clear:right;
-
-    box-sizing: border-box;
-
-    @extend %right-col;
-
-    &>p { margin: 0; }
-
-    a {
-      color: #fff;
-      text-decoration: none;
-      border-bottom: dashed 1px #ccc;
-    }
-  }
-
-  pre {
-    @extend %code-font;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding: 2em $main-padding;
-  }
-
-  blockquote {
-    &>p {
-      background-color: $code-annotation-bg;
-      padding: $code-annotation-padding 2em;
-      color: #eee;
-    }
-  }
-}
 
 ////////////////////////////////////////////////////////////////////////////////
 // RESPONSIVE DESIGN

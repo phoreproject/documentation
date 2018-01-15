@@ -26,6 +26,7 @@ under the License.
 <!doctype html>
 <html>
   <head>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -52,6 +53,8 @@ under the License.
     </a>
     <div class="toc-wrapper">
       <%= image_tag "logo.png", class: 'logo' %>
+    <p style="color:#FFFF; text-align: center;">Phore Documentation</p>
+<!--
       <% if language_tabs.any? %>
         <div class="lang-selector">
           <% language_tabs.each do |lang| %>
@@ -63,6 +66,7 @@ under the License.
           <% end %>
         </div>
       <% end %>
+-->
       <% if current_page.data.search %>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -94,10 +98,11 @@ under the License.
       <% end %>
     </div>
     <div class="page-wrapper">
-      <div class="dark-box"></div>
+<!--      <div class="dark-box"></div>-->
       <div class="content">
         <%= page_content %>
       </div>
+<!--
       <div class="dark-box">
         <% if language_tabs.any? %>
           <div class="lang-selector">
@@ -111,6 +116,7 @@ under the License.
           </div>
         <% end %>
       </div>
+-->
     </div>
   </body>
 </html>
